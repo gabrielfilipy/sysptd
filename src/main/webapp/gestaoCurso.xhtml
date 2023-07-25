@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="WEB-INF/template/lyout.xhtml"> 
+ 
+    <ui:define name="conteudo">
+    	<title>Gestão de cursos</title> 
+    	<h:form id="frm">
+			<p:messages id="registroMensage"></p:messages> 
+						 
+			<!--<p:defaultCommand target="salvar" scope="registroDialog"/>  comando responsvel por fazer com que o ENTER tenha ao dentra dessa dialog -->
+			<div class="container">
+				<div class="card">
+			        <h5>Vertical</h5>
+			        <div class="ui-fluid">
+			            <div class="field">
+			                <p:outputLabel for="firstname1" value="Firstname"/>
+			                <p:inputText id="firstname1"/>
+			            </div>
+			            <div class="field">
+			                <p:outputLabel for="lastname1" value="Lastname"/>
+			                <p:inputText id="lastname1"/>
+			            </div>
+			        </div>
+			    </div>
+			</div><!-- container -->
+  		</h:form>
+  	</ui:define> 
+</ui:composition>
